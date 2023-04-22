@@ -187,6 +187,7 @@ public class Presentacion_1 extends javax.swing.JFrame {
 
             Login login = Login.getLogin();
             login.setVisible(true);
+            this.dispose();
  
     }//GEN-LAST:event_jButton2ActionPerformed
 
