@@ -180,6 +180,7 @@ public class Login extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Usuario correcto", "Informacion", 1);
             Presentacion_2 bienvenida = Presentacion_2.getPresentacion_2();
             bienvenida.setVisible(true);
+            this.dispose();
         }
         else{
             // Se niega el acceso y se devuelve una informacion de error.
