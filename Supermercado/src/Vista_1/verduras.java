@@ -142,6 +142,7 @@ public class verduras extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
     Presentacion_2 presentacion2 = Presentacion_2.getPresentacion_2();
     presentacion2.setVisible(true);
+    this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
