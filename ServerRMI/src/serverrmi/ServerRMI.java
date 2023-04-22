@@ -32,19 +32,17 @@ import javax.crypto.spec.SecretKeySpec;
 
 
 public class ServerRMI extends UnicastRemoteObject implements RMIDAO{
-    
+    //definiendo
     private String claveSecreta = "clave";
     private String datos = "datos";
     
-
+    //server
     public ServerRMI() throws RemoteException{
         super();
     }
 
     
-    /**
-     * @param args the command line arguments
-     */
+ 
     public static void main(String[] args) {
         // TODO code application logic here
         try{
@@ -57,7 +55,7 @@ public class ServerRMI extends UnicastRemoteObject implements RMIDAO{
     }
     
 
-    private SecretKeySpec crearClave(String clave) throws UnsupportedEncodingException, NoSuchAlgorithmException{
+     private SecretKeySpec crearClave(String clave) throws UnsupportedEncodingException, NoSuchAlgorithmException{
         
         byte[] claveEncriptar = clave.getBytes("UTF-8");
         MessageDigest sha = MessageDigest.getInstance("SHA-1");
@@ -70,7 +68,7 @@ public class ServerRMI extends UnicastRemoteObject implements RMIDAO{
         return secretKey;
         
     }
-    
+    //se protege el metodo encriptar
     @Override
     public String encriptar(String dato, String claveSectreta){
         SecretKeySpec secretKey = null;
@@ -114,12 +112,13 @@ public class ServerRMI extends UnicastRemoteObject implements RMIDAO{
         
         return encriptado;
     }
-
+    //se protege el metodo Mensaje
     @Override
     public String Mensaje(String mensaje) throws RemoteException {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
+    //se protege el metodo VerificarUsuarios
     @Override
     public boolean VerificarUsuarios(String usuario, String contrasenia) {
        boolean estado = false;
