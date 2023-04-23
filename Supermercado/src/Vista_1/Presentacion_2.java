@@ -10,10 +10,11 @@ package Vista_1;
  */
 public class Presentacion_2 extends javax.swing.JFrame {
     
+    // Se crea variable en la que se guarda el estado de la clase Frutas
     private static Presentacion_2 presentacion2;
 
     /**
-     * Creates new form Presentacion_2
+     * Constructor privado de la clase Presentacion_2
      */
     private Presentacion_2() {
         initComponents();
@@ -28,6 +29,13 @@ public class Presentacion_2 extends javax.swing.JFrame {
      * 
      */
     
+    
+    
+    /**
+     * Metodo que duelve una instancia de la clase Presentacion_2
+     * Si no hay crea una
+     * @return presentacion2
+     */
     public static Presentacion_2 getPresentacion_2(){
         if(presentacion2 == null)
         {
