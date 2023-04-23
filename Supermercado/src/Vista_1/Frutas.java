@@ -152,7 +152,7 @@ public class Frutas extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    //Boton regresar menú
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         Presentacion_2 presentacion2 = Presentacion_2.getPresentacion_2();
         presentacion2.setVisible(true);
