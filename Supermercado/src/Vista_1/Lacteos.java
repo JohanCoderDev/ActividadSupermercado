@@ -21,6 +21,7 @@ public class Lacteos extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
     }
      /**
+     * @method getLacteos
      * Metodo que duelve una instancia de la clase Lacteos
      * Si no hay crea una nueva
      * @return lacteos 
