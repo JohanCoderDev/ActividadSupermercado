@@ -9,10 +9,9 @@ package Vista_1;
  * @author Cristhian - Alejandro - Johan
  */
 public class Presentacion_1 extends javax.swing.JFrame {
-
     
-    /**
-     * Creates new form Presentacion_1
+     /**
+     * Constructor publico de la clase Presentacion_1
      */
     public Presentacion_1() {
         initComponents();
@@ -182,7 +181,8 @@ public class Presentacion_1 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    //Boton para la pasar a la siguiente interfaz
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
             Login login = Login.getLogin();
