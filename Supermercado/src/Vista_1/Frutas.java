@@ -22,6 +22,7 @@ public class Frutas extends javax.swing.JFrame {
     }
     
     /**
+     * @method getFrutas
      * Metodo que duelve una instancia de la clase Frutas
      * Si no hay crea una
      * @return frutas
