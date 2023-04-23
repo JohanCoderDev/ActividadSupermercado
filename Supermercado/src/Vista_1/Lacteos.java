@@ -10,17 +10,20 @@ package Vista_1;
  */
 public class Lacteos extends javax.swing.JFrame {
     
-    
+    //Se crea variable en la que se guarda estado de la clase
     private static Lacteos lacteos;
 
     /**
-     * Creates new form verduras
+     * Se inicializa la clase y se posicion en el centro
      */
     private Lacteos() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
-    
+    /**
+     * Condicional para generar una sola instancia
+     * @return la interfaz Lacteos
+     */
     public static Lacteos getLacteos(){
         if(lacteos == null)
         {
@@ -140,7 +143,8 @@ public class Lacteos extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+     //Boton regresar al menú
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
     Presentacion_2 presentacion2 = Presentacion_2.getPresentacion_2();
     presentacion2.setVisible(true);
