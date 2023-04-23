@@ -29,13 +29,6 @@ public class Presentacion_2 extends javax.swing.JFrame {
      * 
      */
     
-    
-    
-    /**
-     * Metodo que duelve una instancia de la clase Presentacion_2
-     * Si no hay crea una
-     * @return presentacion2
-     */
     public static Presentacion_2 getPresentacion_2(){
         if(presentacion2 == null)
         {
