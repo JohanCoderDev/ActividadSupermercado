@@ -23,7 +23,7 @@ public class Lacteos extends javax.swing.JFrame {
      /**
      * Metodo que duelve una instancia de la clase Lacteos
      * Si no hay crea una nueva
-     * @return Lacteos 
+     * @return lacteos 
      */
     public static Lacteos getLacteos(){
         if(lacteos == null)
