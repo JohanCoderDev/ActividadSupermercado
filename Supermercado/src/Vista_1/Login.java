@@ -18,7 +18,7 @@ import java.rmi.registry.Registry;
 
 /**
  * Clase que inicia la interfaz grafica de inicio de sesion.
- * @author JohanCoderDev
+ * @author Cristhian - Alejandro - Johan
  * Version: 1.0
  */
 public class Login extends javax.swing.JFrame {
