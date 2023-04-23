@@ -30,8 +30,7 @@ public class Lacteos extends javax.swing.JFrame {
         if(lacteos == null)
         {
          lacteos = new Lacteos();   
-        }
-        
+        }   
         return lacteos;
     }
 
@@ -116,7 +115,7 @@ public class Lacteos extends javax.swing.JFrame {
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Queso crema --------- $3000", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12))); // NOI18N
         jPanel2.setLayout(new java.awt.BorderLayout());
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/kisspng-cream-cheese-kraft-foods-milk-butter-cake-bagel-and-cream-cheese-5b243eb61e6ea5.1199537815291020061247-removebg-preview.png"))); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/dsfsd.png"))); // NOI18N
         jLabel10.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel2.add(jLabel10, java.awt.BorderLayout.CENTER);
 
@@ -126,7 +125,7 @@ public class Lacteos extends javax.swing.JFrame {
         jPanel8.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Leche ------- $6000", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12))); // NOI18N
         jPanel8.setLayout(new java.awt.BorderLayout());
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/6c40e6ebea6870c673bc72d8f215724d-ilustracion-de-vaca-de-leche-de-caja-de-leche (1).png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/lechenebla.png"))); // NOI18N
         jLabel9.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel8.add(jLabel9, java.awt.BorderLayout.CENTER);
 
