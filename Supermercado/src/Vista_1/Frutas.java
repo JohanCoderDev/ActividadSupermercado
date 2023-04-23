@@ -24,7 +24,7 @@ public class Frutas extends javax.swing.JFrame {
     /**
      * Metodo que duelve una instancia de la clase Frutas
      * Si no hay crea una
-     * @return Frutas
+     * @return frutas
      */
     public static Frutas getFrutas(){
         if(fruta == null)
