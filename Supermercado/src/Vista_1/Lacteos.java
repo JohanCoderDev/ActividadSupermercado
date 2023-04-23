@@ -10,19 +10,20 @@ package Vista_1;
  */
 public class Lacteos extends javax.swing.JFrame {
     
-    //Se crea variable en la que se guarda estado de la clase
+    //Se crea variable en la que se guarda estado de la clase Lacteos
     private static Lacteos lacteos;
 
-    /**
-     * Se inicializa la clase y se posicion en el centro
+     /**
+     * Constructor privado de la clase Lacteos
      */
     private Lacteos() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
-    /**
-     * Condicional para generar una sola instancia
-     * @return la interfaz Lacteos
+     /**
+     * Metodo que duelve una instancia de la clase Lacteos
+     * Si no hay crea una nueva
+     * @return Lacteos 
      */
     public static Lacteos getLacteos(){
         if(lacteos == null)
