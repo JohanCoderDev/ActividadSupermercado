@@ -10,11 +10,11 @@ package Vista_1;
  */
 public class Frutas extends javax.swing.JFrame {
     
-    // Se crea variable en la que se guarda el estado de la clase
+    // Se crea variable en la que se guarda el estado de la clase Frutas
     private static Frutas fruta;
 
     /**
-     * Se inicializa la clase y se posiciona en el centro
+     * Constructor privado de la clase Frutas
      */
     private Frutas() {
         initComponents();
@@ -22,8 +22,9 @@ public class Frutas extends javax.swing.JFrame {
     }
     
     /**
-     * Condicional para generar una sola instancia
-     * @return interfaz Frutas
+     * Metodo que duelve una instancia de la clase Frutas
+     * Si no hay crea una
+     * @return Frutas
      */
     public static Frutas getFrutas(){
         if(fruta == null)
