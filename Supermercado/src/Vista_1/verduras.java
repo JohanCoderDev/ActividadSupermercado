@@ -23,6 +23,7 @@ public class verduras extends javax.swing.JFrame {
     }
     
     /**
+     * @method getVerduras
      * Metodo que duelve una instancia de la clase verduras
      * Si no hay crea una
      * @return Verduras
