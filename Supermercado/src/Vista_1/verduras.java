@@ -10,16 +10,23 @@ package Vista_1;
  */
 public class verduras extends javax.swing.JFrame {
     
+    
+    // Se crea variable en la que se guarda el estado de la clase verduras
     private static verduras Verduras;
-
+    
     /**
-     * Creates new form verduras
+     * Constructor privado de la clase Verduras
      */
     private verduras() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
     
+    /**
+     * Metodo que duelve una instancia de la clase verduras
+     * Si no hay crea una
+     * @return Verduras
+     */
     public static verduras getVerduras(){
         if(Verduras == null)
         {
@@ -139,6 +146,8 @@ public class verduras extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    // Boton para regresar al menú
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
     Presentacion_2 presentacion2 = Presentacion_2.getPresentacion_2();
     presentacion2.setVisible(true);
