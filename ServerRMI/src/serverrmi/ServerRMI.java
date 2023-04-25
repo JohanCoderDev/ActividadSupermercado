@@ -124,12 +124,19 @@ public class ServerRMI extends UnicastRemoteObject implements RMIDAO{
        boolean estado = false;
         
         String usuarioCorrecto = "johan";
+        String usuarioCorrecto1 = "Alejandro";
+        String usuarioCorrecto2 = "Cristhian";
         String contraseniaCorrecta = "1234";
+       
         String datosCorrectos = null;
+        String datosCorrectos1 = null;
+        String datosCorrectos2 = null;
         
         datosCorrectos = encriptar(usuarioCorrecto, contraseniaCorrecta);
-    
-        if((usuario.equals(datosCorrectos))&&(contrasenia.equals(contraseniaCorrecta))) {
+        datosCorrectos1 = encriptar(usuarioCorrecto1, contraseniaCorrecta);
+        datosCorrectos1 = encriptar(usuarioCorrecto2, contraseniaCorrecta);
+        
+        if( ( ( usuario.equals(datosCorrectos))||(usuario.equals(datosCorrectos1))||usuario.equals(datosCorrectos2))&&(contrasenia.equals(contraseniaCorrecta))) {
            estado = true;
         }
         return estado;
