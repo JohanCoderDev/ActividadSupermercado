@@ -100,7 +100,7 @@ public class Login extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(38, 176, 191));
 
         contrasenia.setBackground(new java.awt.Color(38, 176, 191));
-        contrasenia.setForeground(new java.awt.Color(255, 255, 255));
+        contrasenia.setForeground(new java.awt.Color(204, 204, 204));
         contrasenia.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         contrasenia.setText("Digite su contraseña");
         contrasenia.setBorder(null);
@@ -121,7 +121,7 @@ public class Login extends javax.swing.JFrame {
         });
 
         usuario.setBackground(new java.awt.Color(38, 176, 191));
-        usuario.setForeground(new java.awt.Color(255, 255, 255));
+        usuario.setForeground(new java.awt.Color(204, 204, 204));
         usuario.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         usuario.setText("Digite su usuario");
         usuario.setBorder(null);
@@ -199,7 +199,7 @@ public class Login extends javax.swing.JFrame {
                 .addComponent(jLabel4)
                 .addGap(44, 44, 44)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(43, Short.MAX_VALUE))
+                .addContainerGap(81, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel2);
@@ -235,7 +235,7 @@ public class Login extends javax.swing.JFrame {
         
         valorIncriptado = interfaz.encriptar(nUsuario, nContrasenia);
                
-        if(interfaz.VerificarUsuarios(valorIncriptado, nContrasenia)){
+        if(interfaz.VerificarUsuarios(nUsuario, nContrasenia) == true){
             // Confirma el usuario y da acceso a la interfaz Bienvenida.
             JOptionPane.showMessageDialog(this, "Usuario correcto", "Informacion", 1);
             Presentacion_2 bienvenida = Presentacion_2.getPresentacion_2();
@@ -260,7 +260,7 @@ public class Login extends javax.swing.JFrame {
        // Condicion que devuelve un texto limpio en caso de que reciba una texto con "Digite si usuario"
         if(usuario.getText().equals("Digite su usuario")){
          usuario.setText("");
-         usuario.setForeground(new java.awt.Color(0, 0, 0));
+         usuario.setForeground(new java.awt.Color(255, 255, 255));
         }
     }//GEN-LAST:event_usuarioMouseClicked
 
@@ -268,7 +268,7 @@ public class Login extends javax.swing.JFrame {
         
         // Condicion que devuelve un texto limpio en caso de que reciba una texto con "Digite su contraseña"
         if(contrasenia.getText().equals("Digite su contraseña")){
-           contrasenia.setForeground(new java.awt.Color(0, 0, 0));
+           contrasenia.setForeground(new java.awt.Color(255,255,255));
            contrasenia.setText(""); 
         }
     }//GEN-LAST:event_contraseniaMouseClicked

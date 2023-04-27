@@ -33,8 +33,8 @@ import javax.crypto.spec.SecretKeySpec;
 
 public class ServerRMI extends UnicastRemoteObject implements RMIDAO{
     //definiendo
-    private String claveSecreta = "clave";
-    private String datos = "datos";
+//    private String claveSecreta = "clave";
+//    private String datos = "datos";
     
     //server
     public ServerRMI() throws RemoteException{
@@ -73,7 +73,7 @@ public class ServerRMI extends UnicastRemoteObject implements RMIDAO{
     public String encriptar(String dato, String claveSectreta){
         SecretKeySpec secretKey = null;
         try {
-            secretKey = this.crearClave(claveSecreta);
+            secretKey = crearClave(claveSectreta);
         } catch (UnsupportedEncodingException ex) {
             Logger.getLogger(ServerRMI.class.getName()).log(Level.SEVERE, null, ex);
         } catch (NoSuchAlgorithmException ex) {
@@ -96,7 +96,7 @@ public class ServerRMI extends UnicastRemoteObject implements RMIDAO{
         
         byte[] datosEncriptar = null;
         try {
-            datosEncriptar = datos.getBytes("UTF-8");
+            datosEncriptar = dato.getBytes("UTF-8");
         } catch (UnsupportedEncodingException ex) {
             Logger.getLogger(ServerRMI.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -122,23 +122,19 @@ public class ServerRMI extends UnicastRemoteObject implements RMIDAO{
     @Override
     public boolean VerificarUsuarios(String usuario, String contrasenia) {
        boolean estado = false;
+               
+        String datosCorrectos = encriptar("johan", "1234");
+        String datosCorrectos1 = encriptar("alejandro", "1234");
+        String datosCorrectos2 = encriptar("cristhian", "1234");
+        String datosUsuario = encriptar(usuario, contrasenia);
         
-        String usuarioCorrecto = "johan";
-        String usuarioCorrecto1 = "Alejandro";
-        String usuarioCorrecto2 = "Cristhian";
-        String contraseniaCorrecta = "1234";
-       
-        String datosCorrectos = null;
-        String datosCorrectos1 = null;
-        String datosCorrectos2 = null;
+        System.out.println(datosCorrectos);
+        System.out.println(datosUsuario);
         
-        datosCorrectos = encriptar(usuarioCorrecto, contraseniaCorrecta);
-        datosCorrectos1 = encriptar(usuarioCorrecto1, contraseniaCorrecta);
-        datosCorrectos1 = encriptar(usuarioCorrecto2, contraseniaCorrecta);
-        
-        if( ( ( usuario.equals(datosCorrectos))||(usuario.equals(datosCorrectos1))||usuario.equals(datosCorrectos2))&&(contrasenia.equals(contraseniaCorrecta))) {
+        if((datosUsuario.equals(datosCorrectos) || (datosUsuario.equals(datosCorrectos1)) || (datosUsuario.equals(datosCorrectos2)))){
            estado = true;
         }
+        
         return estado;
     }
     
