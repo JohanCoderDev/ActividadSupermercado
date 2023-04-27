@@ -40,7 +40,10 @@ public class Frutas extends javax.swing.JFrame {
     
     String banano = " Banano ";
     String mandarina = "Mandarina";
-    
+    String naranja = "naranja";
+    String pera = "pera";
+    String manzana = "manzana";
+    String sandia = "sandia";
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -212,6 +215,26 @@ public class Frutas extends javax.swing.JFrame {
         MasOpciones.frutas = MasOpciones.frutas + mandarina + " | ";
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        MasOpciones.frutas = MasOpciones.frutas + pera + " | ";
+    }                                        
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        MasOpciones.frutas = MasOpciones.frutas + manzana + " | ";
+    }                                        
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        MasOpciones.frutas = MasOpciones.frutas + sandia + " | ";
+    }                                        
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        MasOpciones.frutas = MasOpciones.frutas + naranja + " | ";
+    }  
+    
     /**
      * @param args the command line arguments
      */
