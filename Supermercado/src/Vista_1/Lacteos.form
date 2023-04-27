@@ -67,7 +67,7 @@
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                <TitledBorder title="Queso campesino ------- $ 5500">
+                <TitledBorder justification="2" title="Queso campesino ------- $ 5500">
                   <Font PropertyName="font" name="Copperplate Gothic Bold" size="12" style="0"/>
                 </TitledBorder>
               </Border>
@@ -99,6 +99,9 @@
                   <Image iconType="3" name="/Iconos/Comprar-removebg-preview (1).png"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+              </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="440" y="50" width="110" height="100"/>
@@ -114,7 +117,7 @@
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                <TitledBorder title="Yogurt -------- $ 4000">
+                <TitledBorder justification="2" title="Yogurt -------- $ 4000">
                   <Font PropertyName="font" name="Copperplate Gothic Bold" size="12" style="0"/>
                 </TitledBorder>
               </Border>
@@ -164,7 +167,7 @@
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                <TitledBorder title="Kumis ------- $6000">
+                <TitledBorder justification="2" title="Kumis ------- $6000">
                   <Font PropertyName="font" name="Copperplate Gothic Bold" size="12" style="0"/>
                 </TitledBorder>
               </Border>
@@ -214,12 +217,15 @@
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                <TitledBorder title="Helado de queso ------- $2000">
+                <TitledBorder justification="2" title="Helado ------- $2000">
                   <Font PropertyName="font" name="Copperplate Gothic Bold" size="12" style="0"/>
                 </TitledBorder>
               </Border>
             </Property>
           </Properties>
+          <AccessibilityProperties>
+            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="Helado ------- $2000"/>
+          </AccessibilityProperties>
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
             <Property name="useNullLayout" type="boolean" value="false"/>
@@ -277,7 +283,7 @@
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                <TitledBorder title="Queso crema --------- $3000">
+                <TitledBorder justification="2" title="Queso crema --------- $3000">
                   <Font PropertyName="font" name="Copperplate Gothic Bold" size="12" style="0"/>
                 </TitledBorder>
               </Border>
@@ -327,7 +333,7 @@
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                <TitledBorder title="Leche ------- $6000">
+                <TitledBorder justification="2" title="Leche ------- $6000">
                   <Font PropertyName="font" name="Copperplate Gothic Bold" size="12" style="0"/>
                 </TitledBorder>
               </Border>

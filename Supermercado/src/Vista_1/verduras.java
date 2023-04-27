@@ -49,16 +49,22 @@ public class verduras extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
+        jButton5 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
         jPanel7 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
         jPanel8 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
+        jButton7 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -75,61 +81,79 @@ public class verduras extends javax.swing.JFrame {
 
         jPanel4.setBackground(new java.awt.Color(183, 210, 194));
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Lechuga -------- $5000", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12))); // NOI18N
-        jPanel4.setLayout(new java.awt.BorderLayout());
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/imagen_2023-03-09_175804308.png"))); // NOI18N
-        jLabel8.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel4.add(jLabel8, java.awt.BorderLayout.CENTER);
+        jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, -10, 200, 257));
+
+        jButton2.setBackground(new java.awt.Color(255, 255, 255));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Comprar-removebg-preview (1).png"))); // NOI18N
+        jPanel4.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, 110, 100));
 
         jPanel1.add(jPanel4);
 
         jPanel6.setBackground(new java.awt.Color(183, 210, 194));
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Espinaca ------- $1500", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12))); // NOI18N
-        jPanel6.setLayout(new java.awt.BorderLayout());
+        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/imagen_2023-03-09_182117093.png"))); // NOI18N
-        jLabel11.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel6.add(jLabel11, java.awt.BorderLayout.CENTER);
+        jPanel6.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, -20, 200, 257));
+
+        jButton5.setBackground(new java.awt.Color(255, 255, 255));
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Comprar-removebg-preview (1).png"))); // NOI18N
+        jPanel6.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, 110, 100));
 
         jPanel1.add(jPanel6);
 
         jPanel3.setBackground(new java.awt.Color(183, 210, 194));
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Zanahoria ------------ $1200", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12))); // NOI18N
-        jPanel3.setLayout(new java.awt.BorderLayout());
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/imagen_2023-03-09_172813665.png"))); // NOI18N
-        jLabel5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel3.add(jLabel5, java.awt.BorderLayout.CENTER);
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, -10, 220, 257));
+
+        jButton3.setBackground(new java.awt.Color(255, 255, 255));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Comprar-removebg-preview (1).png"))); // NOI18N
+        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, 110, 100));
 
         jPanel1.add(jPanel3);
 
         jPanel7.setBackground(new java.awt.Color(183, 210, 194));
         jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Cilantro ------ $1500", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12))); // NOI18N
-        jPanel7.setLayout(new java.awt.BorderLayout());
+        jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/imagen_2023-03-09_181551661.png"))); // NOI18N
-        jLabel12.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel7.add(jLabel12, java.awt.BorderLayout.CENTER);
+        jPanel7.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, -10, 220, 257));
+
+        jButton6.setBackground(new java.awt.Color(255, 255, 255));
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Comprar-removebg-preview (1).png"))); // NOI18N
+        jPanel7.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, 110, 100));
 
         jPanel1.add(jPanel7);
 
         jPanel2.setBackground(new java.awt.Color(183, 210, 194));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Brócoli -------------- $3000", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12))); // NOI18N
-        jPanel2.setLayout(new java.awt.BorderLayout());
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/imagen_2023-03-09_181051700.png"))); // NOI18N
-        jLabel10.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel2.add(jLabel10, java.awt.BorderLayout.CENTER);
+        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, -10, 170, 257));
+
+        jButton4.setBackground(new java.awt.Color(255, 255, 255));
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Comprar-removebg-preview (1).png"))); // NOI18N
+        jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, 110, 100));
 
         jPanel1.add(jPanel2);
 
         jPanel8.setBackground(new java.awt.Color(183, 210, 194));
         jPanel8.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Tomate ------- $1700", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12))); // NOI18N
-        jPanel8.setLayout(new java.awt.BorderLayout());
+        jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/imagen_2023-03-09_181851372.png"))); // NOI18N
-        jLabel7.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel8.add(jLabel7, java.awt.BorderLayout.CENTER);
+        jPanel8.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, -10, 190, 257));
+
+        jButton7.setBackground(new java.awt.Color(255, 255, 255));
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Comprar-removebg-preview (1).png"))); // NOI18N
+        jPanel8.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, 110, 100));
 
         jPanel1.add(jPanel8);
 
@@ -188,6 +212,12 @@ public class verduras extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;

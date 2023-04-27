@@ -4,6 +4,7 @@
  */
 package Vista_1;
 
+import Vista_1.MasOpciones;
 /**
  *
  * @author Cristhian - Alejandro - Johan
@@ -33,6 +34,15 @@ public class Lacteos extends javax.swing.JFrame {
         }   
         return lacteos;
     }
+    
+    String queso = " Queso ";
+    String kumis = " kumis ";
+    String quesoCrema = " Queso crema ";
+    String yogurt = " Yogurt ";
+    String helado = " Helado ";
+    String leche = " Leche ";
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -79,7 +89,7 @@ public class Lacteos extends javax.swing.JFrame {
         jPanel1.setLayout(new java.awt.GridLayout(0, 2));
 
         jPanel4.setBackground(new java.awt.Color(183, 210, 194));
-        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Queso campesino ------- $ 5500", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12))); // NOI18N
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Queso campesino ------- $ 5500", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12))); // NOI18N
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/queso_chimba__1_-removebg-preview.png"))); // NOI18N
@@ -87,12 +97,17 @@ public class Lacteos extends javax.swing.JFrame {
 
         jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Comprar-removebg-preview (1).png"))); // NOI18N
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel4.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 50, 110, 100));
 
         jPanel1.add(jPanel4);
 
         jPanel6.setBackground(new java.awt.Color(183, 210, 194));
-        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Yogurt -------- $ 4000", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12))); // NOI18N
+        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Yogurt -------- $ 4000", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12))); // NOI18N
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/plastic-container-for-yogurt-illustration-free-png.png"))); // NOI18N
@@ -110,7 +125,7 @@ public class Lacteos extends javax.swing.JFrame {
         jPanel1.add(jPanel6);
 
         jPanel3.setBackground(new java.awt.Color(183, 210, 194));
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Kumis ------- $6000", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12))); // NOI18N
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Kumis ------- $6000", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12))); // NOI18N
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Kumis-removebg-preview.png"))); // NOI18N
@@ -128,7 +143,7 @@ public class Lacteos extends javax.swing.JFrame {
         jPanel1.add(jPanel3);
 
         jPanel7.setBackground(new java.awt.Color(183, 210, 194));
-        jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Helado de queso ------- $2000", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12))); // NOI18N
+        jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Helado ------- $2000", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12))); // NOI18N
         jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/icons8_melting_ice_cream_50px.png"))); // NOI18N
@@ -148,9 +163,10 @@ public class Lacteos extends javax.swing.JFrame {
         jPanel7.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 50, 110, 100));
 
         jPanel1.add(jPanel7);
+        jPanel7.getAccessibleContext().setAccessibleName("Helado ------- $2000");
 
         jPanel2.setBackground(new java.awt.Color(183, 210, 194));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Queso crema --------- $3000", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12))); // NOI18N
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Queso crema --------- $3000", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12))); // NOI18N
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/dsfsd.png"))); // NOI18N
@@ -168,7 +184,7 @@ public class Lacteos extends javax.swing.JFrame {
         jPanel1.add(jPanel2);
 
         jPanel8.setBackground(new java.awt.Color(183, 210, 194));
-        jPanel8.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Leche ------- $6000", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12))); // NOI18N
+        jPanel8.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Leche ------- $6000", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Copperplate Gothic Bold", 0, 12))); // NOI18N
         jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/lechenebla.png"))); // NOI18N
@@ -208,10 +224,12 @@ public class Lacteos extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        MasOpciones.canasta = MasOpciones.canasta + kumis + " | ";
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        MasOpciones.canasta = MasOpciones.canasta + quesoCrema;
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -220,11 +238,18 @@ public class Lacteos extends javax.swing.JFrame {
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
+        MasOpciones.canasta = MasOpciones.canasta + yogurt;
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        MasOpciones.canasta = MasOpciones.canasta + queso + " | ";
+        
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
