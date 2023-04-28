@@ -231,42 +231,42 @@ public class Lacteos extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        MasOpciones.canasta = MasOpciones.canasta + "-" + kumis + "\n";
+        MasOpciones.canasta = MasOpciones.canasta + " | " + kumis + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.canasta1 = MasOpciones.canasta1 + kumis1;
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-        MasOpciones.canasta = MasOpciones.canasta + "-" + quesoCrema + "\n";
+        MasOpciones.canasta = MasOpciones.canasta + " | " + quesoCrema + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.canasta1 = MasOpciones.canasta1 + quesoCrema1;
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        MasOpciones.canasta = MasOpciones.canasta + "-" + leche + "\n";
+        MasOpciones.canasta = MasOpciones.canasta + " | " + leche + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.canasta1 = MasOpciones.canasta1 + leche1;
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-        MasOpciones.canasta = MasOpciones.canasta + "-" + yogurt + "\n";
+        MasOpciones.canasta = MasOpciones.canasta + " | " + yogurt + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.canasta1 = MasOpciones.canasta1 + yogurt1;
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
-        MasOpciones.canasta = MasOpciones.canasta + "-" + helado + "\n";
+        MasOpciones.canasta = MasOpciones.canasta + " | " + helado + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.canasta1 = MasOpciones.canasta1 + helado1;
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        MasOpciones.canasta = MasOpciones.canasta + "-" + queso + "\n";
+        MasOpciones.canasta = MasOpciones.canasta + " | " + queso + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.canasta1 = MasOpciones.canasta1 + queso1;
 

@@ -313,7 +313,7 @@ public class MasOpciones extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         
-        JOptionPane.showMessageDialog(null, "Valor a pagar en seccion lacteos " + " = " + canasta1 + "\n" + "Valor a pagar en seccion frutas " + " = " + frutas1 + "\n" + "Valor a pagar en seccion verduras "  +  " = " + verdura1 + "\n" + "------------------" + "\n" + "Valor total a pagar = " + (canasta1 + frutas1 + verdura1));
+        JOptionPane.showMessageDialog(null, "Valor a pagar en seccion lacteos " + " = " + "$ " + canasta1 + "\n" + "Valor a pagar en seccion frutas " + " = " + "$ " + frutas1 + "\n" + "Valor a pagar en seccion verduras "  +  " = " + "$ " + verdura1 + "\n" + "------------------" + "\n" + "Valor total a pagar = " + "$ " + (canasta1 + frutas1 + verdura1));
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**

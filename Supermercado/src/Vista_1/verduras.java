@@ -227,7 +227,7 @@ public class verduras extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        MasOpciones.verdura = MasOpciones.verdura + "-" + lechuga + "\n";
+        MasOpciones.verdura = MasOpciones.verdura + " | " + lechuga + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.verdura1 = MasOpciones.verdura1 + lechuga1;
         
@@ -235,35 +235,35 @@ public class verduras extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-         MasOpciones.verdura = MasOpciones.verdura + "-" + zanahoria + "\n";
+         MasOpciones.verdura = MasOpciones.verdura + " | " + zanahoria + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.verdura1 = MasOpciones.verdura1 + zanahoria1;
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-         MasOpciones.verdura = MasOpciones.verdura + "-" + brocoli + "\n";
+         MasOpciones.verdura = MasOpciones.verdura + " | " + brocoli + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.verdura1 = MasOpciones.verdura1 + brocoli1;
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-         MasOpciones.verdura = MasOpciones.verdura + "-" + espinaca + "\n";
+         MasOpciones.verdura = MasOpciones.verdura + " | " + espinaca + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.verdura1 = MasOpciones.verdura1 + espinaca1;
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-         MasOpciones.verdura = MasOpciones.verdura + "-" + cilantro + "\n";
+         MasOpciones.verdura = MasOpciones.verdura + " | " + cilantro + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.verdura1 = MasOpciones.verdura1 + cilantro1;
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
-         MasOpciones.verdura = MasOpciones.verdura + "-" + tomate + "\n";
+         MasOpciones.verdura = MasOpciones.verdura + " | " + tomate + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.verdura1 = MasOpciones.verdura1 + tomate1;
     }//GEN-LAST:event_jButton7ActionPerformed
