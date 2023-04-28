@@ -4,6 +4,7 @@
  */
 package Vista_1;
 
+import Vista_1.Lacteos;
 import java.util.ArrayList;
 import javax.swing.DefaultListModel;
 
@@ -12,6 +13,9 @@ import javax.swing.DefaultListModel;
  * @author Cristhian - Alejandro - Johan
  */
 public class Presentacion_2 extends javax.swing.JFrame {
+    
+    public static Lacteos leche;
+    
     
     ArrayList array = new ArrayList();
     DefaultListModel modelo = new DefaultListModel();
@@ -188,12 +192,14 @@ public class Presentacion_2 extends javax.swing.JFrame {
         // TODO add your handling code here:
         Lacteos lacteos = Lacteos.getLacteos();
         lacteos.setVisible(true);
+        lacteos.setExtendedState(Lacteos.MAXIMIZED_BOTH);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         verduras Verduras = verduras.getVerduras();
         Verduras.setVisible(true);
+        Verduras.setExtendedState(Lacteos.MAXIMIZED_BOTH);
         
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -201,6 +207,7 @@ public class Presentacion_2 extends javax.swing.JFrame {
         // TODO add your handling code here:
         Frutas frutas = Frutas.getFrutas();
         frutas.setVisible(true);
+        frutas.setExtendedState(Lacteos.MAXIMIZED_BOTH);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed

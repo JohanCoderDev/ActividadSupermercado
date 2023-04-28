@@ -40,10 +40,10 @@ public class Frutas extends javax.swing.JFrame {
     
     String banano = " Banano ";
     String mandarina = "Mandarina";
-    String naranja = "naranja";
-    String pera = "pera";
-    String manzana = "manzana";
-    String sandia = "sandia";
+    String naranja = "Naranja";
+    String pera = "Pera";
+    String manzana = "Manzana";
+    String sandia = "Sandia";
 
     /**
      * This method is called from within the constructor to initialize the form.

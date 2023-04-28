@@ -5,6 +5,7 @@
 package Vista_1;
 
 import Vista_1.MasOpciones;
+
 /**
  *
  * @author Cristhian - Alejandro - Johan
