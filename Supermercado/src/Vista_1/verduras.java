@@ -88,6 +88,11 @@ public class verduras extends javax.swing.JFrame {
 
         jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Comprar-removebg-preview (1).png"))); // NOI18N
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel4.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, 110, 100));
 
         jPanel1.add(jPanel4);
@@ -178,6 +183,11 @@ public class verduras extends javax.swing.JFrame {
     presentacion2.setVisible(true);
     this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

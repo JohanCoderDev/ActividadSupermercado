@@ -6,6 +6,7 @@ package Vista_1;
 
 
 import Vista_1.MasOpciones;
+import javax.swing.JOptionPane;
 /**
  *
  * @author Cristhian - Alejandro - Johan
@@ -206,33 +207,38 @@ public class Frutas extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        MasOpciones.frutas = MasOpciones.frutas + banano + " | ";
-        
+        MasOpciones.frutas = MasOpciones.frutas + "-" + banano + "\n";
+        JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-        MasOpciones.frutas = MasOpciones.frutas + mandarina + " | ";
+        MasOpciones.frutas = MasOpciones.frutas + "-" + mandarina + "\n";
+        JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // TODO add your handling code here:
-        MasOpciones.frutas = MasOpciones.frutas + pera + " | ";
+        MasOpciones.frutas = MasOpciones.frutas + "-" + pera + "\n";
+        JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
     }                                        
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // TODO add your handling code here:
-        MasOpciones.frutas = MasOpciones.frutas + manzana + " | ";
+        MasOpciones.frutas = MasOpciones.frutas + "-" + manzana + "\n";
+        JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
     }                                        
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // TODO add your handling code here:
-        MasOpciones.frutas = MasOpciones.frutas + sandia + " | ";
+        MasOpciones.frutas = MasOpciones.frutas + "-" + sandia + "\n";
+        JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
     }                                        
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // TODO add your handling code here:
-        MasOpciones.frutas = MasOpciones.frutas + naranja + " | ";
+        MasOpciones.frutas = MasOpciones.frutas + "-" + naranja + "\n";
+        JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
     }  
     
     /**

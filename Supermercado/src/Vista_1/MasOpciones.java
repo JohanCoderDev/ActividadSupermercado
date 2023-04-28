@@ -43,6 +43,7 @@ public class MasOpciones extends javax.swing.JFrame {
     public static String frutas;
     
     
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -294,7 +295,7 @@ public class MasOpciones extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here: 
-        JOptionPane.showMessageDialog(null ,"Sección lacteos: " + "\n" + canasta + "\n" + "Seccion lacteos: " + "\n" + frutas, " Los elementos agregados al carrito son " , 1);
+        JOptionPane.showMessageDialog(null ,"Sección lacteos: " + "\n" + canasta + "\n" + "Seccion frutas: " + "\n" + frutas , " Los elementos agregados al carrito son: " , 1);
         
     }//GEN-LAST:event_jButton4ActionPerformed
 
