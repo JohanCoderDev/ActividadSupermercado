@@ -45,6 +45,14 @@ public class Frutas extends javax.swing.JFrame {
     String pera = "Pera";
     String manzana = "Manzana";
     String sandia = "Sandia";
+    
+    int banano1 = 1000;
+    int sandia1 = 5000;
+    int mandarina1 = 400;
+    int naranja1 = 600;
+    int pera1 = 2000;
+    int manzana1 = 1500;
+   
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -120,6 +128,11 @@ public class Frutas extends javax.swing.JFrame {
 
         jButton8.setBackground(new java.awt.Color(255, 255, 255));
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Comprar-removebg-preview (1).png"))); // NOI18N
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
         jPanel6.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 60, 110, 100));
 
         jPanel1.add(jPanel6);
@@ -151,6 +164,11 @@ public class Frutas extends javax.swing.JFrame {
 
         jButton7.setBackground(new java.awt.Color(255, 255, 255));
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Comprar-removebg-preview (1).png"))); // NOI18N
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
         jPanel7.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 60, 110, 100));
 
         jPanel1.add(jPanel7);
@@ -164,6 +182,11 @@ public class Frutas extends javax.swing.JFrame {
 
         jButton5.setBackground(new java.awt.Color(255, 255, 255));
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Comprar-removebg-preview (1).png"))); // NOI18N
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 60, 110, 100));
 
         jPanel1.add(jPanel2);
@@ -177,6 +200,11 @@ public class Frutas extends javax.swing.JFrame {
 
         jButton6.setBackground(new java.awt.Color(255, 255, 255));
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Comprar-removebg-preview (1).png"))); // NOI18N
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
         jPanel8.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 60, 110, 100));
 
         jPanel1.add(jPanel8);
@@ -209,37 +237,45 @@ public class Frutas extends javax.swing.JFrame {
         // TODO add your handling code here:
         MasOpciones.frutas = MasOpciones.frutas + "-" + banano + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
+        MasOpciones.frutas1 = MasOpciones.frutas1 + banano1;
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         MasOpciones.frutas = MasOpciones.frutas + "-" + mandarina + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
+        MasOpciones.frutas1 = MasOpciones.frutas1 + mandarina1;
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
-        MasOpciones.frutas = MasOpciones.frutas + "-" + pera + "\n";
-        JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
-    }                                        
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
-        MasOpciones.frutas = MasOpciones.frutas + "-" + manzana + "\n";
-        JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
-    }                                        
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
         MasOpciones.frutas = MasOpciones.frutas + "-" + sandia + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
-    }                                        
+        MasOpciones.frutas1 = MasOpciones.frutas1 + sandia1;
+    }//GEN-LAST:event_jButton5ActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        MasOpciones.frutas = MasOpciones.frutas + "-" + manzana + "\n";
+        JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
+        MasOpciones.frutas1 = MasOpciones.frutas1 + manzana1;
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+        MasOpciones.frutas = MasOpciones.frutas + "-" + pera + "\n";
+        JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
+        MasOpciones.frutas1 = MasOpciones.frutas1 + pera1;
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
         MasOpciones.frutas = MasOpciones.frutas + "-" + naranja + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
-    }  
+        MasOpciones.frutas1 = MasOpciones.frutas1 + naranja1;
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    
     
     /**
      * @param args the command line arguments

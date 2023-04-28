@@ -4,11 +4,27 @@
  */
 package Vista_1;
 
+import javax.swing.JOptionPane;
+import Vista_1.MasOpciones;
 /**
  *
  * @author Cristhian - Alejandro - Johan
  */
 public class verduras extends javax.swing.JFrame {
+    
+    String lechuga = "Lechuga";
+    String zanahoria = "Zanahoria";
+    String brocoli = "Brocoli";
+    String espinaca = "Espinaca";
+    String cilantro = "Cilantro";
+    String tomate = "Tomate";
+    
+    int lechuga1 = 5000;
+    int zanahoria1 = 1200;
+    int brocoli1 = 3000;
+    int espinaca1 = 1500;
+    int cilantro1 = 1500;
+    int tomate1 = 1700;
     
     
     // Se crea variable en la que se guarda el estado de la clase verduras
@@ -106,6 +122,11 @@ public class verduras extends javax.swing.JFrame {
 
         jButton5.setBackground(new java.awt.Color(255, 255, 255));
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Comprar-removebg-preview (1).png"))); // NOI18N
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
         jPanel6.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, 110, 100));
 
         jPanel1.add(jPanel6);
@@ -119,6 +140,11 @@ public class verduras extends javax.swing.JFrame {
 
         jButton3.setBackground(new java.awt.Color(255, 255, 255));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Comprar-removebg-preview (1).png"))); // NOI18N
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, 110, 100));
 
         jPanel1.add(jPanel3);
@@ -132,6 +158,11 @@ public class verduras extends javax.swing.JFrame {
 
         jButton6.setBackground(new java.awt.Color(255, 255, 255));
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Comprar-removebg-preview (1).png"))); // NOI18N
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
         jPanel7.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, 110, 100));
 
         jPanel1.add(jPanel7);
@@ -145,6 +176,11 @@ public class verduras extends javax.swing.JFrame {
 
         jButton4.setBackground(new java.awt.Color(255, 255, 255));
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Comprar-removebg-preview (1).png"))); // NOI18N
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, 110, 100));
 
         jPanel1.add(jPanel2);
@@ -158,6 +194,11 @@ public class verduras extends javax.swing.JFrame {
 
         jButton7.setBackground(new java.awt.Color(255, 255, 255));
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Comprar-removebg-preview (1).png"))); // NOI18N
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
         jPanel8.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, 110, 100));
 
         jPanel1.add(jPanel8);
@@ -186,8 +227,46 @@ public class verduras extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        MasOpciones.verdura = MasOpciones.verdura + "-" + lechuga + "\n";
+        JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
+        MasOpciones.verdura1 = MasOpciones.verdura1 + lechuga1;
         
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+         MasOpciones.verdura = MasOpciones.verdura + "-" + zanahoria + "\n";
+        JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
+        MasOpciones.verdura1 = MasOpciones.verdura1 + zanahoria1;
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+         MasOpciones.verdura = MasOpciones.verdura + "-" + brocoli + "\n";
+        JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
+        MasOpciones.verdura1 = MasOpciones.verdura1 + brocoli1;
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+         MasOpciones.verdura = MasOpciones.verdura + "-" + espinaca + "\n";
+        JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
+        MasOpciones.verdura1 = MasOpciones.verdura1 + espinaca1;
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+         MasOpciones.verdura = MasOpciones.verdura + "-" + cilantro + "\n";
+        JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
+        MasOpciones.verdura1 = MasOpciones.verdura1 + cilantro1;
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+         MasOpciones.verdura = MasOpciones.verdura + "-" + tomate + "\n";
+        JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
+        MasOpciones.verdura1 = MasOpciones.verdura1 + tomate1;
+    }//GEN-LAST:event_jButton7ActionPerformed
 
     /**
      * @param args the command line arguments

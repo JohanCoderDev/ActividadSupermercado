@@ -42,7 +42,13 @@ public class MasOpciones extends javax.swing.JFrame {
     
     public static String frutas;
     
+    public static String verdura;
     
+    public static int canasta1;
+    
+    public static int frutas1;
+    
+    public static int verdura1;
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -189,6 +195,11 @@ public class MasOpciones extends javax.swing.JFrame {
         jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/facturaaas (1).jpg"))); // NOI18N
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/carrittooo (1).jpg"))); // NOI18N
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -295,9 +306,15 @@ public class MasOpciones extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here: 
-        JOptionPane.showMessageDialog(null ,"Sección lacteos: " + "\n" + canasta + "\n" + "Seccion frutas: " + "\n" + frutas , " Los elementos agregados al carrito son: " , 1);
+        JOptionPane.showMessageDialog(null ,"Sección lacteos: " + "\n" + canasta + "\n" + "------------------" + "\n" + "Seccion frutas: " + "\n" + frutas + "\n" + "------------------" + "\n" + "Seccion verduras: " + "\n" + verdura, " Los elementos agregados al carrito son: " , 1);
         
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        
+        JOptionPane.showMessageDialog(null, "Valor a pagar en seccion lacteos " + " = " + canasta1 + "\n" + "Valor a pagar en seccion frutas " + " = " + frutas1 + "\n" + "Valor a pagar en seccion verduras "  +  " = " + verdura1 + "\n" + "------------------" + "\n" + "Valor total a pagar = " + (canasta1 + frutas1 + verdura1));
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
