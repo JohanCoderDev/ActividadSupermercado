@@ -14,9 +14,14 @@ import javax.swing.DefaultListModel;
  */
 public class Presentacion_2 extends javax.swing.JFrame {
     
+    /**
+     * Variable estatica para singleton
+     */
     public static Lacteos leche;
     
-    
+    /**
+     * Array crado para imprimir las sugerencias
+     */
     ArrayList array = new ArrayList();
     DefaultListModel modelo = new DefaultListModel();
     
@@ -193,6 +198,7 @@ public class Presentacion_2 extends javax.swing.JFrame {
         Lacteos lacteos = Lacteos.getLacteos();
         lacteos.setVisible(true);
         lacteos.setExtendedState(Lacteos.MAXIMIZED_BOTH);
+        this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -200,7 +206,7 @@ public class Presentacion_2 extends javax.swing.JFrame {
         verduras Verduras = verduras.getVerduras();
         Verduras.setVisible(true);
         Verduras.setExtendedState(Lacteos.MAXIMIZED_BOTH);
-        
+        this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -208,6 +214,7 @@ public class Presentacion_2 extends javax.swing.JFrame {
         Frutas frutas = Frutas.getFrutas();
         frutas.setVisible(true);
         frutas.setExtendedState(Lacteos.MAXIMIZED_BOTH);
+        this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed

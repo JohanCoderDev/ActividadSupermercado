@@ -36,6 +36,7 @@ public class Login extends javax.swing.JFrame {
     }
     
     /**
+     * @metod
      * Metodo que devuelve una unica instancia de la clase Login
      * Si esta no existe creara una nueva
      * @return login

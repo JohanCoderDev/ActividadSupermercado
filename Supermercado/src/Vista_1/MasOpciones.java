@@ -9,14 +9,18 @@ import javax.swing.DefaultListModel;
 import javax.swing.JOptionPane;
 
 /**
- *
- * @author Johan Ordoñez
+ * @author Johan - Crishian - Alejandro
  */
 public class MasOpciones extends javax.swing.JFrame {
     
+    /**
+     * Variable estatica utilizada para el singleton
+     */
     private static MasOpciones Maso;
     
-
+    /**
+     * Array utilizado para imprimir sugerencias
+     */
     ArrayList array = new ArrayList();
     DefaultListModel modelo = new DefaultListModel();
 
@@ -29,6 +33,10 @@ public class MasOpciones extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
     }
 
+    /**
+     * Metodo utilizado para el singleton
+     * @return Maso
+     */
     public static MasOpciones getMaso(){
         if(Maso == null)
         {
@@ -38,6 +46,10 @@ public class MasOpciones extends javax.swing.JFrame {
         return Maso;
     }
     
+    
+    /**
+     * Variables creadas para guardar los valores totales
+     */
     public static String canasta;
     
     public static String frutas;
@@ -302,11 +314,23 @@ public class MasOpciones extends javax.swing.JFrame {
         login.setVisible(true);
         JOptionPane.showMessageDialog(null, "Gracias, vuelva pronto");
         this.dispose();
+    canasta = "";
+    
+    frutas = "";
+    
+    verdura = "";
+    
+    canasta1 = 0;
+    
+    frutas1 = 0;
+    
+    verdura1 = 0;
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here: 
-        JOptionPane.showMessageDialog(null ,"Sección lacteos: " + "\n" + canasta + "\n" + "------------------" + "\n" + "Seccion frutas: " + "\n" + frutas + "\n" + "------------------" + "\n" + "Seccion verduras: " + "\n" + verdura, " Los elementos agregados al carrito son: " , 1);
+        JOptionPane.showMessageDialog(this ,"Sección lacteos: " + "\n" + canasta + "\n" + "------------------" + "\n" + "Seccion frutas: " + "\n" + frutas + "\n" + "------------------" + "\n" + "Seccion verduras: " + "\n" + verdura, " Los elementos agregados al carrito son: " , 1);
         
     }//GEN-LAST:event_jButton4ActionPerformed
 
