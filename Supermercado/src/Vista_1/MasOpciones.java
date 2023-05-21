@@ -51,13 +51,12 @@ public class MasOpciones extends javax.swing.JFrame {
      * Variables creadas para guardar los valores totales
      */
     
-    int[] canasta;
+    static ArrayList<String> canasta = new ArrayList<String>();
+    static ArrayList<Integer> canasta1 = new ArrayList<Integer>();
 
     int[] frutas;
     
     int[] verdura;
-    
-    int[] canasta1;
     
     int[] frutas1;
     
@@ -346,11 +345,6 @@ public class MasOpciones extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, "Gracias, vuelva pronto");
         this.dispose();
     
-    canasta1 = 0;
-    
-    frutas1 = 0;
-    
-    verdura1 = 0;
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -362,8 +356,16 @@ public class MasOpciones extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+         
+            for (int i = 0; i < canasta.size(); i++) {
+            String elementoLista1 = canasta.get(i);
+            int elementoLista2 = canasta1.get(i);
+
+            JOptionPane.showMessageDialog(null, "Sección lacteos" + "\n" + elementoLista1 + "=" + elementoLista2 + "\n" + "" , "" , 1);
+            
+        }
         
-        JOptionPane.showMessageDialog(null, "Valor a pagar en seccion lacteos " + " = " + "$ " + canasta1 + "\n" + "Valor a pagar en seccion frutas " + " = " + "$ " + frutas1 + "\n" + "Valor a pagar en seccion verduras "  +  " = " + "$ " + verdura1 + "\n" + "------------------" + "\n" + "Valor total a pagar = " + "$ " + (canasta1 + frutas1 + verdura1));
+        //JOptionPane.showMessageDialog(null, "Valor a pagar en seccion lacteos " + " = " + "$ " + canasta1 + "\n" + "Valor a pagar en seccion frutas " + " = " + "$ " + frutas1 + "\n" + "Valor a pagar en seccion verduras "  +  " = " + "$ " + verdura1 + "\n" + "------------------" + "\n" + "Valor total a pagar = " + "$ " + (canasta1 + frutas1 + verdura1));
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
