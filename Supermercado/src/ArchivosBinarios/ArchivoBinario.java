@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package ArchivosBinarios;
 
 import Vista_1.MasOpciones;
@@ -20,7 +17,6 @@ public class ArchivoBinario {
     /** 
      * Metodo para escribir codigo binario en el archivo Lacteos.bin 
      * @param dato 
-     * @throws IOException  
      */
     public static void escribirBinarioLacteoTexto(String dato) throws IOException {
     try {
