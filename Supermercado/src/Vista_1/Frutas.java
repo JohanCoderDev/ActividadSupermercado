@@ -39,12 +39,20 @@ public class Frutas extends javax.swing.JFrame {
         return fruta;
     }
     
+    /**
+     * Variables creadas para guardar el nombre del producto
+     */
+    
     String banano = " Banano ";
     String mandarina = "Mandarina";
     String naranja = "Naranja";
     String pera = "Pera";
     String manzana = "Manzana";
     String sandia = "Sandia";
+    
+    /**
+     * Variables utilizadas para guardar el precio de los productos
+     */
     
     int banano1 = 1000;
     int sandia1 = 5000;
@@ -235,78 +243,49 @@ public class Frutas extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        MasOpciones.frutas = MasOpciones.frutas + "-" + banano + "\n";
+        MasOpciones.frutas = MasOpciones.frutas + " | " + banano + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.frutas1 = MasOpciones.frutas1 + banano1;
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-        MasOpciones.frutas = MasOpciones.frutas + "-" + mandarina + "\n";
+        MasOpciones.frutas = MasOpciones.frutas + " | " + mandarina + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.frutas1 = MasOpciones.frutas1 + mandarina1;
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        MasOpciones.frutas = MasOpciones.frutas + "-" + sandia + "\n";
+        MasOpciones.frutas = MasOpciones.frutas + " | " + sandia + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.frutas1 = MasOpciones.frutas1 + sandia1;
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-        MasOpciones.frutas = MasOpciones.frutas + "-" + manzana + "\n";
+        MasOpciones.frutas = MasOpciones.frutas + " | " + manzana + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.frutas1 = MasOpciones.frutas1 + manzana1;
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
-        MasOpciones.frutas = MasOpciones.frutas + "-" + pera + "\n";
+        MasOpciones.frutas = MasOpciones.frutas + " | " + pera + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.frutas1 = MasOpciones.frutas1 + pera1;
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
-        MasOpciones.frutas = MasOpciones.frutas + "-" + naranja + "\n";
+        MasOpciones.frutas = MasOpciones.frutas + " | " + naranja + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.frutas1 = MasOpciones.frutas1 + naranja1;
     }//GEN-LAST:event_jButton8ActionPerformed
 
     
     
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(verduras.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(verduras.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(verduras.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(verduras.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        
-    }
+   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton2;

@@ -1,3 +1,7 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ */
 package Vista_1;
 
 import Vista_1.MasOpciones;
@@ -11,13 +15,14 @@ public class Lacteos extends javax.swing.JFrame {
     
     //Se crea variable en la que se guarda estado de la clase Lacteos
     private static Lacteos lacteos;
-
+    private MasOpciones MasOpciones;
      /**
      * Constructor privado de la clase Lacteos
      */
     private Lacteos() {
         initComponents();
         this.setLocationRelativeTo(null);
+        MasOpciones.getMaso();
     }
      /**
      * @method getLacteos
@@ -33,6 +38,9 @@ public class Lacteos extends javax.swing.JFrame {
         return lacteos;
     }
     
+    /**
+     * Variables creadas para guardar el nombre del producto
+     */
     String queso = " Queso ";
     String kumis = " kumis ";
     String quesoCrema = " Queso crema ";
@@ -40,6 +48,9 @@ public class Lacteos extends javax.swing.JFrame {
     String helado = " Helado ";
     String leche = " Leche ";
     
+    /**
+     * Variables utilizadas para guardar el precio de los productos
+     */
     int queso1 = 5500;
     int kumis1 = 6000;
     int quesoCrema1 = 3000;
@@ -227,77 +238,48 @@ public class Lacteos extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        MasOpciones.canasta = MasOpciones.canasta + "-" + kumis + "\n";
+        MasOpciones.canasta = MasOpciones.canasta + " | " + kumis + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.canasta1 = MasOpciones.canasta1 + kumis1;
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-        MasOpciones.canasta = MasOpciones.canasta + "-" + quesoCrema + "\n";
+        MasOpciones.canasta = MasOpciones.canasta + " | " + quesoCrema + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.canasta1 = MasOpciones.canasta1 + quesoCrema1;
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        MasOpciones.canasta = MasOpciones.canasta + "-" + leche + "\n";
+        MasOpciones.canasta = MasOpciones.canasta + " | " + leche + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.canasta1 = MasOpciones.canasta1 + leche1;
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-        MasOpciones.canasta = MasOpciones.canasta + "-" + yogurt + "\n";
+        MasOpciones.canasta = MasOpciones.canasta + " | " + yogurt + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.canasta1 = MasOpciones.canasta1 + yogurt1;
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
-        MasOpciones.canasta = MasOpciones.canasta + "-" + helado + "\n";
+        MasOpciones.canasta = MasOpciones.canasta + " | " + helado + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.canasta1 = MasOpciones.canasta1 + helado1;
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        MasOpciones.canasta = MasOpciones.canasta + "-" + queso + "\n";
+        MasOpciones.canasta = MasOpciones.canasta + " | " + queso + "\n";
         JOptionPane.showMessageDialog(null , "Agregado al carrito de compras" , "Accion realizada con exito", 1);
         MasOpciones.canasta1 = MasOpciones.canasta1 + queso1;
 
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(verduras.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(verduras.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(verduras.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(verduras.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        
-       
-    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
