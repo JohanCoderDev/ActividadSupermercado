@@ -12,15 +12,15 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Johan Ordoñez - Cristhian Padilla - Alejandro Portilla
+ * @author Johan Ordoñez - Cristhian Padilla - Alejandro Portilla 
  */
 
 public class ArchivoBinario {
     
-    /**
-     * Metodo para escribir codigo binario en el archivo Lacteos.bin
-     * @param dato
-     * @throws IOException 
+    /** 
+     * Metodo para escribir codigo binario en el archivo Lacteos.bin 
+     * @param dato 
+     * @throws IOException  
      */
     public static void escribirBinarioLacteoTexto(String dato) throws IOException {
     try {
@@ -40,9 +40,9 @@ public class ArchivoBinario {
 
 
     /**
-     * Metodo para escribir codigo binario en el archivo Lacteos.bin
-     * @param dato
-     * @throws IOException 
+     * Metodo para escribir codigo binario en el archivo Lacteos.bin 
+     * @param dato  
+     * @throws IOException  
      */
     public static void escribirBinarioFrutaTexto(String dato) throws IOException {
     try {
@@ -61,9 +61,9 @@ public class ArchivoBinario {
 }
     
     /**
-     * Metodo para escribir codigo binario en el archivo Lacteos.bin
-     * @param dato
-     * @throws IOException 
+     * Metodo para escribir codigo binario en el archivo Lacteos.bin 
+     * @param dato 
+     * @throws IOException  
      */
     
     public static void escribirBinarioVerduraTexto(String dato) throws IOException {
@@ -86,9 +86,9 @@ public class ArchivoBinario {
     
     
     /**
-     * Metodo para escribir codigo binario en el archivo Lacteos.bin
-     * @param dato
-     * @throws IOException 
+     * Metodo para escribir codigo binario en el archivo Lacteos.bin 
+     * @param dato 
+     * @throws IOException  
      */
     public static int escribirBinarioCanasta1Precio(int dato) throws IOException {
         int resultado = 0;
@@ -114,9 +114,9 @@ public class ArchivoBinario {
 
   
     /**
-     * Metodo para escribir codigo binario en el archivo Frutas.bin
-     * @param dato
-     * @throws IOException 
+     * Metodo para escribir codigo binario en el archivo Frutas.bin 
+     * @param dato 
+     * @throws IOException  
      */
     public static int escribirBinarioFrutas1Precio(int dato) throws IOException {
         int resultado = 0;
@@ -137,9 +137,9 @@ public class ArchivoBinario {
 }
     
     /**
-     * Metodo para escribir codigo binario en el archivo Verduras.bin
-     * @param dato
-     * @throws IOException 
+     * Metodo para escribir codigo binario en el archivo Verduras.bin 
+     * @param dato 
+     * @throws IOException  
      */
     public static int escribirBinarioVerdura1Precio(int dato) throws IOException {
         int resultado = 0;
@@ -166,13 +166,13 @@ public class ArchivoBinario {
 
 
 
-    //------------------------------------------------------------------------------------
+    //-------------------------------------------------------------------------------------
 
     
     /**
-     * Metodo utilizado para leer el archivo binario llamado LacteosPrecio.bin
-     * @return
-     * @throws IOException 
+     * Metodo utilizado para leer el archivo binario llamado LacteosPrecio.bin 
+     * @return 
+     * @throws IOException  
      */
     public static int leerBinarioCanasta1Precio() throws IOException {
         int resultado = 0;
@@ -195,9 +195,9 @@ public class ArchivoBinario {
     
     
     /**
-     * Metodo utilizado para leer el archivo binario llamado FrutasPrecio.bin
-     * @return
-     * @throws IOException 
+     * Metodo utilizado para leer el archivo binario llamado FrutasPrecio.bin 
+     * @return 
+     * @throws IOException  
      */
      public static int leerBinarioFrutas1Precio() throws IOException {
          int resultado = 0;
@@ -220,8 +220,8 @@ public class ArchivoBinario {
      
      
     /**
-     * Metodo utilizado para leer el archivo binario llamado VerdurasPrecio.bin
-     * @return
+     * Metodo utilizado para leer el archivo binario llamado VerdurasPrecio.bin 
+     * @return 
      * @throws IOException 
      */
       public static int leerBinarioVerduras1Precio() throws IOException {
@@ -246,7 +246,7 @@ public class ArchivoBinario {
       
       
       /**
-       * Metodo utilizado para leer el archivo binario FrutaTexto.bin
+       * Metodo utilizado para leer el archivo binario FrutaTexto.bin 
        * @throws IOException 
        */
        public static String leerBinarioFrutaTexto() throws IOException {
@@ -265,7 +265,7 @@ public class ArchivoBinario {
 }
        
        /**
-       * Metodo utilizado para leer el archivo binario LacteoTexto..bin
+       * Metodo utilizado para leer el archivo binario LacteoTexto..bin 
        * @throws IOException 
        */
         public static String leerBinarioLacteoTexto() throws IOException {
@@ -284,7 +284,7 @@ public class ArchivoBinario {
 }
         
         /**
-       * Metodo utilizado para leer el archivo binario VerduraTexto.bin
+       * Metodo utilizado para leer el archivo binario VerduraTexto.bin 
        * @throws IOException 
        */
          public static String leerBinarioVerduraTexto() throws IOException {
